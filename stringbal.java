@@ -10,7 +10,7 @@ class abc
 			stack.push(arr[i]);
 	   if (arr[i]=='}'||arr[i]==')'||arr[i]== ']')
             {
-            if(stack.isEmpty())
+            if(!stack.isEmpty())
 	      {
               char n=stack.peek();
               if (arr[i]== '}'&&n =='{'||arr[i]== ')'&&n =='('||
