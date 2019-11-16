@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 class abc
 {
 	public static String chkparenthesis(char arr[])
@@ -6,20 +6,21 @@ class abc
       Stack<Character> stack = new Stack<Character>();
 	 for(int i=0;i<arr.length;i++)
 	  {
-        if(arr[i]=='{'||arr[i]=='('||arr[i]=='[')
+           if(arr[i]=='{'||arr[i]=='('||arr[i]=='[')
 			stack.push(arr[i]);
-		if (arr[i]=='}'||arr[i]==')'||arr[i]== ']')
-        {
-           if (stack.isEmpty())
-             return "Not Balanced";
+	   if (arr[i]=='}'||arr[i]==')'||arr[i]== ']')
+            {
+            if(stack.isEmpty())
+	      {
               char n=stack.peek();
-             if (arr[i]== '}'&&n =='{'||arr[i]== ')'&&n =='('||
-             	arr[i]== ']'&&arr[i]== '[')
+              if (arr[i]== '}'&&n =='{'||arr[i]== ')'&&n =='('||
+             	arr[i]== ']'&&n== '[')
                  stack.pop();
-             else 
-             return "Not Balanced";
-        }
-       }
+              else 
+                return "Not Balanced";
+              }
+	    }
+         }
      if(stack.isEmpty())
      	return "Balanced";
      else
