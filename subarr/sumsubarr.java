@@ -26,16 +26,16 @@ public static void main(String[] args) {
 				a[f]=k;
 				f++;
 				sum=sum+arr[k];
-                // System.out.print(arr[k]+" ");
 
 			}
-			//System.out.println(" sum:"+sum);
 			   if(sum==h)
 				{
 				System.out.println(a[0]+" "+a[f-1]);
+				   count++;
 				}
 		}
 	}
-	//System.out.println("count of h is:"+arr[0]);
+	         if(count==0)
+		System.out.println("No such subarray found");
 }
 }
