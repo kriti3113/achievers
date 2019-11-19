@@ -87,7 +87,6 @@ class LinkedList1
 		}
 		System.out.println("Enter the value of k");
 		int k=sc.nextInt();
-		//display(li);
 		fun(li,k);
 		display(li);
 
