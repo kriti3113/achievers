@@ -46,7 +46,6 @@ class LinkedList1
       {
       	rotate(li,temp.data);
         deletebeg(li);
-        System.out.println(temp.data);
         temp=temp.next;
         k--;
       }
@@ -90,6 +89,6 @@ class LinkedList1
 		int k=sc.nextInt();
 		//display(li);
 		fun(li,k);
-		//display(li);
+		display(li);
 
 	}}
