@@ -16,27 +16,13 @@ class chkbst
   {
     root=null;
   }
-
-   public static void preOrder(Node root)
-    {
-    if(root!=null)
-      {
-        System.out.println(root.data);
-        preOrder(root.left);
-        preOrder(root.right);
-      }
-      return;
-    }
 public static boolean chkb(Node root,Node prev)
 {
-
-  //Node par=null;
   if(root!=null)
  {
   if(root.left!=null)
    {
   chkb(root.left,root);
-  System.out.println(root.data);
   if(root.left.data>root.data)
     {
     return false;
