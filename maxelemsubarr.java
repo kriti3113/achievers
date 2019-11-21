@@ -19,8 +19,8 @@ public static void subarray(int arr[],int n,int start,int end,int k)
 
 		}
 		if(count==k)
-			System.out.print(max+" ");
-	subarray(arr,n,start+1,end,k);
+		System.out.print(max+" ");
+	    subarray(arr,n,start+1,end,k);
    }
    return;
 }
