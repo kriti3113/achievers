@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 class dll
 {
 	 Node head;
@@ -44,18 +44,18 @@ class dll
 
      	public static dll reverse(dll l)
 			{
-				Node next=null;
-				Node prev=null;
-				Node curr=l.head;
-				while(curr!=null)
-				{
-					next=curr.next;
-					curr.next=prev;
-					prev=curr;
-					curr=next;
-				}
-				l.head=prev;
-				return l;
+		Node next=null;
+	        Node prev=null;
+	        Node curr=l.head;
+		while(curr!=null)
+		{
+			next=curr.next;
+			curr.next=prev;
+			prev=curr;
+			curr=next;
+		}
+			l.head=prev;
+			return l;
 			}
    
      public static void main(String[] args) {
