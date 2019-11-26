@@ -7,7 +7,7 @@ class RemoveStringDuplicate
                  
 		int count=0;
 		int f=0,j=0;
-		char d[]=new char[100];
+		char d[]=new char[str.length()];
       for(int i=0;i<str.length()-1;i++)
 	 {
         if(arr[i]!=arr[i+1])
