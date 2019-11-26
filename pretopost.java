@@ -32,9 +32,11 @@ class pretopost {
 
                 s.push(str.charAt(i) + ""); 
             } 
-        } 
-  
-        return s.peek(); 
+        }
+     StringBuffer sb=new StringBuffer(s.peek());
+        sb.reverse();
+        String d=new String(sb);
+        return d; 
     } 
 
     public static void main(String args[]) 
