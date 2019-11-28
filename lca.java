@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LCA
+ class LCA
 {
 	static class Node
 	{
