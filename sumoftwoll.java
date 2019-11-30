@@ -81,6 +81,12 @@ public static String converttostring(LinkedList1 li)
    String c1=reverse(d1);
     y=Integer.parseInt(c1);
   int sum=x+y;
-  System.out.println("sum of two LinkedList elements are "+sum);
+String g=Integer.toString(sum);
+  String g1=reverse(g);
+  char arr[]=g1.toCharArray();
+ System.out.println("sum of two LinkedList elements are ");
+  for(int i=0;i<arr.length;i++)
+    System.out.print(arr[i]+" ");
+ 
 	}
 }
